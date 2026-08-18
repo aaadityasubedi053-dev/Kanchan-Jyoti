@@ -633,78 +633,115 @@ nav a:hover::after{
 
 }
 
-.about-text h3{
+.Message {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    
+    /* Letter box */
+    background: #ffffff;
+    border: 2px solid #1d3557;
+    border-radius: 10px;
+    
+    /* Shadow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
-    font-size:28px;
+    /* Text */
+    font-family: Georgia, "Times New Roman", serif;
+    color: #333;
+    line-height: 1.7;
 
-    color:var(--secondary);
-
-    margin-bottom:25px;
-
-    position:relative;
-
+    box-sizing: border-box;
 }
 
-.about-text h3::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:80px;
-
-    bottom:-10px;
-
-    width:360px;
-
-    height:5px;
-
-    background:var(--primary);
-
-    border-radius:20px;
-
+/* Heading */
+.Message h3 {
+    text-align: center;
+    color: #1d3557;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1d3557;
 }
 
-
-.about-text p{
-
-    margin-top:35px;
-
-    font-size:18px;
-
-    color:#555;
-
-    line-height:1.9;
-
-    margin-bottom:40px;
-
+/* Principal image */
+.principal {
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    float: left;
+    margin: 0 25px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#salutation{
-    text-align: left;
-}
-#welcome,
-#first-paragraph,
-#second-paragraph,
-#third-paragraph,
-#fourth-paragraph{
-    text-align: left;
-    margin-top: -25px;
+/* Principal name */
+#principal {
+    font-weight: bold;
+    color: #1d3557;
 }
 
-#wishes{
-    text-align: left;
-    margin-top:-35px;
+/* Greeting */
+#salutation {
+    font-weight: bold;
+    margin-top: 25px;
 }
 
-#from{
-    text-align: left;
-    margin-bottom: -45px;
+/* Welcome */
+#welcome {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d3557;
 }
 
-#ending{
-    text-align: left;
-    margin-top: 40px;
+/* Paragraphs */
+.Message p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+/* Closing */
+#wishes {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#from {
+    margin: 0;
+    font-weight: bold;
+}
+
+#ending {
+    margin-top: 0;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .Message {
+        width: 94%;
+        padding: 25px 20px;
+    }
+
+    .Message h3 {
+        font-size: 23px;
+    }
+
+    .principal {
+        width: 125px;
+        height: 150px;
+        margin-right: 15px;
+        border-radius: 20px;
+    }
+
+    .Message p {
+        font-size: 15px;
+    }
 }
 
 /* ===========================================
@@ -828,12 +865,7 @@ section h2::after{
 
 }
 
-.principal{
-    height: 150px;
-    width: 150px;
-    margin-bottom: -45px;
-    
-}
+
 
 
 /* ===========================================
@@ -975,6 +1007,12 @@ section h2::after{
 
     gap:25px;
 
+}
+
+/*   Button more facilities   */
+ .btn{
+    position:relative;
+    bottom: -20px;
 }
 
 /* ===========================================
