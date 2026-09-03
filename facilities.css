@@ -24,11 +24,25 @@ body{
     color:#bbc5cf;
 }
 
-#btn img{
-   width: 60px;
-    height: 60px;
-    padding: 0; 
-    border: none;
-    background: none;
-    cursor: pointer;
+#btn{
+    display:inline-block;
+    background-color: rgb(120, 190, 167) ;
+    border-radius: 67px;
+    border-style:outset;
+     
+    width: 50px;
+    height: 30px;
+    margin-left:15px;
+    color: white;
+    padding: 9px 9px;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    text-align: start;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgb(24, 153, 228);
+}
+
+#btn:active {
+    transform: scale(0.95);
 }
